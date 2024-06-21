@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Writings</title>
+    <link>https://mahdizmni.github.io/writings/</link>
+    <description>Recent content on Writings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://mahdizmni.github.io/writings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://mahdizmni.github.io/writings/posts/test/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mahdizmni.github.io/writings/posts/test/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+      <content:encoded><![CDATA[<p>separator..5
+separator
+MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest <br>
+MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest  MathJax
+latest
+Search docs
+THE BASICS</p>
+<p>What is MathJax?
+MathJax Accessibility Features
+Writing Mathematics for MathJax
+The MathJax Community
+Reporting Issues with MathJax
+INCLUDING MATHJAX IN A WEB PAGE</p>
+<p>Getting Started with Components
+Configuring and Loading MathJax
+The MathJax Components
+Typesetting and Converting Math
+Hosting Your Own Copy of MathJax
+Making a Custom Build of MathJax
+Examples in a Browser
+MATHJAX ON A SERVER USING NODEJS</p>
+<p>Getting Started with Node
+Three Ways to Use MathJax in Node
+Examples in Node
+MATHJAX INPUT</p>
+<p>TeX and LaTeX Support
+Differences from Actual TeX
+TeX and LaTeX math delimiters
+TeX and LaTeX in HTML documents
+Defining TeX macros
+Automatic Equation Numbering
+TeX and LaTeX extensions
+The TeX/LaTeX Extension List
+action
+ams
+amscd
+autoload
+bbox
+boldsymbol
+braket
+bussproofs
+cancel
+cases
+centernot
+color
+colortbl
+colorv2
+configmacros
+empheq
+enclose
+extpfeil
+gensymb
+html
+mathtools
+mhchem
+newcommand
+newcommand Commands
+noerrors
+noundefined
+physics
+require
+setoptions
+tagformat
+textcomp
+textmacros
+unicode
+upgreek
+verb
+autobold
+autoload-all
+begingroup
+mediawiki-texvc
+Supported TeX/LaTeX commands
+MathML Support
+AsciiMath Support
+MATHJAX OUTPUT</p>
+<p>Output Formats
+Lazy Typesetting
+Line Breaking
+Font Support
+Browser Support
+CONFIGURATION OPTIONS</p>
+<p>Configuring MathJax
+ADVANCED TOPICS</p>
+<p>MathJax in Dynamic Content
+Custom Extensions
+The MathJax Processing Model
+Synchronizing Your Code with MathJax
+THE MATHJAX API</p>
+<p>Using the MathJax API
+MISCELLANEOUS</p>
+<p>MathJax FAQ
+MathJax Badges and Logo
+Articles and Presentations
+MATHJAX UPDATES</p>
+<p>Upgrading from Version 2.x
+What&rsquo;s New
+TeX and LaTeX Support The TeX/LaTeX Extension List newcommand Edit on GitHub
+newcommand
+The newcommand extension provides the \def, \newcommand, \renewcommand, \let, \newenvironment, and \renewenvironment macros for creating new macros and environments in TeX. For example,</p>
+<p>(
+\def\RR{{\bf R}}
+\def\bold#1{{\bf #1}}
+)
+defines a macro \RR that produces a bold “R”, while \bold{math} typesets its argument using a bold font. See Defining TeX macros for more information.</p>
+<p>This extension is already loaded in all the components that include the TeX input jax, other than input/tex-base. To load the newcommand extension explicitly (when using input/tex-base for example), add &lsquo;[tex]/newcommand&rsquo; to the load array of the loader block of your MathJax configuration, and add &rsquo;newcommand&rsquo; to the packages array of the tex block.</p>
+<p>window.MathJax = {
+loader: {load: [&rsquo;[tex]/newcommand&rsquo;]},
+tex: {packages: {&rsquo;[+]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+Alternatively, use \require{newcommand} in a TeX expression to load it dynamically from within the math on the page, if the require package is loaded.</p>
+<p>Since the nnewcommand extension is included in the combined components that contain the TeX input jax, it may already be in the package list. In that case, if you want to disable it, you can remove it:</p>
+<p>window.MathJax = {
+tex: {packages: {&rsquo;[-]&rsquo;: [&rsquo;newcommand&rsquo;]}}
+};
+newcommand Commands
+The newcommand extension implements the following macros: \def, \let, \newcommand, \newenvironment, \renewcommand, \renewenvironment</p>
+<p>© Copyright 2021 The MathJax Consortium. Revision 1ac57add.</p>
+<p>Built with Sphinx using a theme provided by Read the Docs.
+Read the Docsv: latest</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

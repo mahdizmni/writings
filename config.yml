@@ -1,0 +1,140 @@
+baseURL: "https://mahdizmni.github.io/writings"
+title: Writings
+paginate: 50
+theme: PaperModX
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+googleAnalytics: 
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    math: true
+    title: ExampleSite
+    description: "ExampleSite description"
+    keywords: [Blog, Portfolio, PaperModX]
+    author: Me
+    # author: ["Me", "You"] # multiple authors
+    images: ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: light # dark, light
+    disableThemeToggle: true
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: false 
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: true
+    hidemeta: false
+    hideSummary: false
+    showtoc: true 
+    tocopen: true
+    TocSide: 'left'  # or 'right'
+
+   # assets:
+        # disableFingerprinting: true
+   #     favicon: "<link / abs url>"
+   #     favicon16x16: "<link / abs url>"
+   #     favicon32x32: "<link / abs url>"
+   #     apple_touch_icon: "<link / abs url>"
+   #     safari_pinned_tab: "<link / abs url>"
+
+  #  label:
+  #      text: "Home"
+  #      icon: /apple-touch-icon.png
+  #      iconHeight: 35
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - $ 
+            - $ 
+        enable: true
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: ExampleSite
+        subtitle: "This is subtitle"
+        imageUrl: "<img location>"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Tags
+              url: /tags/
+
+    # home-info mode
+    homeInfoParams:
+        Title: 
+        Content:  
+
+#    socialIcons:
+#        - name: rss
+#          url: "https://twitter.com/"
+        #- name: stackoverflow
+        #  url: "https://stackoverflow.com"
+        #- name: github
+        #  url: "https://github.com/"
+
+        #analytics:
+        #google:
+        #    SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: false # hide everywhere but not in structured data
+        hiddenInList: false # hide on list pages and home
+        hiddenInSingle: false # hide on single page
+
+    editPost:
+        URL: "https://github.com/<path_to_repo>/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+#    fuseOpts:
+#        isCaseSensitive: false
+#        shouldSort: true
+#        location: 0
+#        distance: 1000
+#        threshold: 0.4
+#        minMatchCharLength: 0
+#        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: Tags
+          name: tags
+          url: /tags/
+          weight: 20
+# Read: https://github.com/reorx/hugo-PaperModX/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
+

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mahdizmni.github.io/writings/sitemap.xml
