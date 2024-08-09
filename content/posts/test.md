@@ -1,12 +1,7 @@
 ---
-title: "Test"
-date: "2019-03-11"
-description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["markdown", "css", "html", "themes"]
-draft: true 
+title: "Soon"
+date: "2023-07-11"
+description: "don't worry will start sharing my notes soon!"
+draft: False 
 ---
-$\Y$
-$$\mathcal{Z}$$
-$$\mathbb{Z}$$
-$$Z$$
-$\T:\Y \rightarrow \X$ is a function.
+$$\mathcal{X}$$
