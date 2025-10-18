@@ -7,7 +7,10 @@ ShowBreadCrumbs: false
 ShowReadingTime: false
 ---
 2025
+
 Oct 18 
 
 احمق مردا که دل درین جهان ببندد! که نعمتی بدهد و زشت بازستاند
+
 --
+
